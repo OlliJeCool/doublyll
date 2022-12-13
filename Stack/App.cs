@@ -1,16 +1,17 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Queue
+namespace Stack
 {
     public class App
     {
         public void Run()
         {
-            var queue = new Queue();
+            var stack = new Stack();
             bool proceed = true;
             while (proceed)
             {
@@ -18,27 +19,26 @@ namespace Queue
                 Console.Clear();
                 if (a.Length < 1)
                 {
-                    Console.WriteLine("Bad input!");
+                    Console.WriteLine("Wrong input!");
                 }
                 else
                 {
                     switch (a[0])
                     {
                         case "push":
-                            int temp;
-                            if ((temp = Parse(a[1])) != int.MaxValue) { queue.Insert(temp); }
+                            stack.Push(Parse(a[1]));
                             break;
-                        case "remove":
-                            queue.Remove();
+                        case "pop":
+                            stack.Pop();
                             break;
                         case "empty":
-                            Console.WriteLine(queue.isEmpty());
+                            Console.WriteLine(stack.isEmpty());
                             break;
-                        case "first":
-                            Item? top = queue.getFirst();
-                            if (top != null)
+                        case "top":
+                            Item? top = stack.GetTop();
+                            if(top != null)
                             {
-                                Console.WriteLine($"First item is: {top.Value}");
+                                Console.WriteLine(top.Value);
                             }
                             else { Console.WriteLine("Empty!"); }
                             break;
@@ -46,19 +46,22 @@ namespace Queue
                             proceed = false;
                             break;
                         default:
-                            Console.WriteLine("Bad input!");
+                            Console.WriteLine("Wrong input!");
                             break;
                     }
+
                 }
             }
         }
+
+
         public int Parse(string x)
         {
-            if (int.TryParse(x, out int result))
+            if(int.TryParse(x, out int result))
             {
                 return result;
             }
-            else { Console.WriteLine("Bad input!"); return int.MaxValue; }
+            else { throw new Exception("Wrong input!"); }
         }
     }
 }

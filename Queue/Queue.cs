@@ -35,8 +35,8 @@ namespace Queue
             }
         }
 
-        public bool IsEmpty() => this.tail == null ? true : false;
+        public bool isEmpty() => this.tail == null ? true : false;
 
-        public Item? GetTop() => this.head;
+        public Item? getFirst() => this.head == null ? null : this.head;
     }
 }
