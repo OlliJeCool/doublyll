@@ -36,7 +36,7 @@ namespace Stack
                             break;
                         case "top":
                             Item? top = stack.GetTop();
-                            if(top != null)
+                            if (top != null)
                             {
                                 Console.WriteLine(top.Value);
                             }
@@ -57,7 +57,7 @@ namespace Stack
 
         public int Parse(string x)
         {
-            if(int.TryParse(x, out int result))
+            if (int.TryParse(x, out int result))
             {
                 return result;
             }

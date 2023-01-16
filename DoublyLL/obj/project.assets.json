@@ -8,19 +8,19 @@
     "net6.0": []
   },
   "packageFolders": {
-    "C:\\Users\\1001\\.nuget\\packages\\": {}
+    "C:\\Users\\ollid\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\1001\\Desktop\\doublyll\\DoublyLL\\DoublyLL.csproj",
+      "projectUniqueName": "C:\\Users\\ollid\\Desktop\\doublyll\\DoublyLL\\DoublyLL.csproj",
       "projectName": "DoublyLL",
-      "projectPath": "C:\\Users\\1001\\Desktop\\doublyll\\DoublyLL\\DoublyLL.csproj",
-      "packagesPath": "C:\\Users\\1001\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\1001\\Desktop\\doublyll\\DoublyLL\\obj\\",
+      "projectPath": "C:\\Users\\ollid\\Desktop\\doublyll\\DoublyLL\\DoublyLL.csproj",
+      "packagesPath": "C:\\Users\\ollid\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\ollid\\Desktop\\doublyll\\DoublyLL\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\1001\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\ollid\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -51,7 +51,8 @@
           "net47",
           "net471",
           "net472",
-          "net48"
+          "net48",
+          "net481"
         ],
         "assetTargetFallback": true,
         "warn": true,
@@ -60,7 +61,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.200\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.402\\RuntimeIdentifierGraph.json"
       }
     }
   }

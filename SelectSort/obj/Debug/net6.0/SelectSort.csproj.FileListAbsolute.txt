@@ -1,0 +1,15 @@
+C:\Users\ollid\Desktop\doublyll\SelectSort\bin\Debug\net6.0\SelectSort.exe
+C:\Users\ollid\Desktop\doublyll\SelectSort\bin\Debug\net6.0\SelectSort.deps.json
+C:\Users\ollid\Desktop\doublyll\SelectSort\bin\Debug\net6.0\SelectSort.runtimeconfig.json
+C:\Users\ollid\Desktop\doublyll\SelectSort\bin\Debug\net6.0\SelectSort.dll
+C:\Users\ollid\Desktop\doublyll\SelectSort\bin\Debug\net6.0\SelectSort.pdb
+C:\Users\ollid\Desktop\doublyll\SelectSort\obj\Debug\net6.0\SelectSort.csproj.AssemblyReference.cache
+C:\Users\ollid\Desktop\doublyll\SelectSort\obj\Debug\net6.0\SelectSort.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ollid\Desktop\doublyll\SelectSort\obj\Debug\net6.0\SelectSort.AssemblyInfoInputs.cache
+C:\Users\ollid\Desktop\doublyll\SelectSort\obj\Debug\net6.0\SelectSort.AssemblyInfo.cs
+C:\Users\ollid\Desktop\doublyll\SelectSort\obj\Debug\net6.0\SelectSort.csproj.CoreCompileInputs.cache
+C:\Users\ollid\Desktop\doublyll\SelectSort\obj\Debug\net6.0\SelectSort.dll
+C:\Users\ollid\Desktop\doublyll\SelectSort\obj\Debug\net6.0\refint\SelectSort.dll
+C:\Users\ollid\Desktop\doublyll\SelectSort\obj\Debug\net6.0\SelectSort.pdb
+C:\Users\ollid\Desktop\doublyll\SelectSort\obj\Debug\net6.0\SelectSort.genruntimeconfig.cache
+C:\Users\ollid\Desktop\doublyll\SelectSort\obj\Debug\net6.0\ref\SelectSort.dll

@@ -15,6 +15,11 @@ namespace DoublyLL
             bool proceed = true;
             while (proceed)
             {
+                Console.Write("Array printed from head to tail: ");
+                doublyll.Print();
+                Console.Write("Array printed in reverse: ");
+                doublyll.PrintRev();
+                Console.Write("\n Input: ");
                 string[] a = Console.ReadLine().Split(" ");
                 Console.Clear();
                 if (a.Length < 1)
@@ -84,7 +89,7 @@ namespace DoublyLL
 
                                 }
                             }
-                            if(a.Length == 3)
+                            if (a.Length == 3)
                             {
                                 var item = Parse(a[2]);
                                 if (item != int.MaxValue)
@@ -103,22 +108,26 @@ namespace DoublyLL
                             break;
                         case "indexof":
                             var tempi = Parse(a[1]);
-                            if(tempi != int.MaxValue)
+                            if (tempi != int.MaxValue)
                             {
-                                doublyll.indexOf(tempi);
+                                Console.WriteLine($"Index of {tempi} in the list is: {doublyll.indexOf(tempi)}");
                             }
                             else { Console.WriteLine("Bad input!"); }
                             break;
-                        case "print":
-                            switch (a[1])
+                        case "contains":
+                            var num = Parse(a[1]);
+                            if (num != int.MaxValue)
                             {
-                                case "-r":
-                                    doublyll.PrintRev();
-                                    break;
-                                default:
-                                    doublyll.Print();
-                                    break;
+                                var res = doublyll.Contains(num) ? "The list contains this item." : "The list does not contain this item.";
+                                Console.WriteLine(res);
                             }
+                            else { Console.WriteLine("Bad input!"); }
+                            break;
+                        case "exit":
+                            proceed = false;
+                            break;
+                        default:
+                            Console.WriteLine("Bad input!");
                             break;
                     }
                 }

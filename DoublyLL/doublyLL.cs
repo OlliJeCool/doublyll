@@ -22,11 +22,15 @@ namespace DoublyLL
             var temp = new Item() { value = input };
             if (this.tail == null)
             {
-                this.tail = this.head = temp; 
+                this.head = this.tail = temp;
             }
-            temp.next = this.head;
-            this.head.prev = temp;
-            this.head = temp;
+            else
+            {
+                temp.next = this.head;
+                this.head.prev = temp;
+                this.head = temp;
+            }
+
         }
 
         public void insertTail(int input)
@@ -36,40 +40,48 @@ namespace DoublyLL
             {
                 this.tail = this.head = temp;
             }
-            temp.prev= this.tail;
-            this.tail.next = temp;
-            this.tail = temp;
+            else
+            {
+                temp.prev = this.tail;
+                this.tail.next = temp;
+                this.tail = temp;
+            }
+
         }
 
-        public void insertInf(Item? item, int input)
+        public void insertInf(Item item, int input)
         {
             var temp = new Item() { value = input };
             if (item.prev == null)
             {
                 temp.next = item;
                 item.prev = temp;
+                this.head = temp;
             }
             else
             {
-                temp.next = item.next;
-                temp.prev = item;
-                item.next = temp;
-                temp.next.prev = temp;
+                temp.next = item;
+                item.prev.next = temp;
+                temp.prev = item.prev;
+                item.prev = temp;
+
+ 
             }
         }
 
-        public void insertBehind(Item? item, int input)
+        public void insertBehind(Item item, int input)
         {
             var temp = new Item() { value = input };
-            if(item.next == null)
+            if (item.next == null)
             {
                 temp.prev = item;
                 item.next = temp;
+                this.tail = temp;
             }
             else
             {
                 item.next.prev = temp;
-                temp.next= item.next;
+                temp.next = item.next;
                 temp.prev = item;
                 item.next = temp;
             }
@@ -99,10 +111,16 @@ namespace DoublyLL
 
         public void Delete(Item? item)
         {
-            if (item.prev == null || item.next == null)
-            {
-                this.tail = this.head = null;
 
+            if(item.prev == null)
+            {
+                this.head = item.next;
+                this.head.prev = null;
+            }
+            else if(item.next == null)
+            {
+                this.tail = item.prev;
+                this.tail.next = null;
             }
             else
             {
@@ -117,7 +135,7 @@ namespace DoublyLL
         {
             if (this.head != null)
             {
-                var temp = this.head.next;
+                var temp = this.head;
                 int count = 0;
                 while (temp != null)
                 {
@@ -132,17 +150,21 @@ namespace DoublyLL
 
         public Item? GetItem(int input)
         {
-            if (this.head != null)
+            Item temp = this.head;
+            int index = indexOf(input);
+            if (index == -1)
             {
-                var temp = this.head.next;
-                while (temp != null)
-                {
-                    if (temp.value == input) { return temp; }
-                    temp = temp.next;
-                }
+                Console.WriteLine("Item not in list.");
                 return null;
             }
-            return null;
+            else
+            {
+                for (int i = 0; i < index; i++)
+                {
+                    temp = temp.next;
+                }
+                return temp;
+            }
         }
 
         public bool Contains(int input) => indexOf(input) >= 0 ? true : false;
@@ -152,27 +174,29 @@ namespace DoublyLL
         #region Print Methods
         public void Print()
         {
-            if(this.head != null)
+            if (this.head != null)
             {
                 var temp = this.head;
-                while(temp != null)
+                while (temp != null)
                 {
-                    Console.Write($"{temp.value},");
+                    Console.Write($"{temp.value} ");
                     temp = temp.next;
                 }
             }
+            Console.WriteLine();
         }
 
         public void PrintRev()
         {
-            if(this.tail!= null)
+            if (this.tail != null)
             {
                 var temp = this.tail;
-                while(temp != null)
+                while (temp != null)
                 {
-                    Console.Write($"{temp.value}, ");
+                    Console.Write($"{temp.value} ");
                     temp = temp.prev;
                 }
+                Console.WriteLine();
             }
         }
         #endregion

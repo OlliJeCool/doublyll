@@ -8,6 +8,13 @@ namespace BinaryTree
 {
     public class App
     {
-        public void Run() { throw new NotImplementedException(); }
+        public void Run()
+        {
+            var tree = new BST();
+            tree.Insert(8);
+            tree.Insert(7);
+            tree.Insert(9);
+            tree.Insert(10);
+        }
     }
 }

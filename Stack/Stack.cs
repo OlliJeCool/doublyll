@@ -24,7 +24,7 @@ namespace Stack
             }
         }
 
-        public Item? GetTop() => this.top == null ? new Item() { Value = -0} : this.top;
+        public Item? GetTop() => this.top == null ? new Item() { Value = -0 } : this.top;
 
         public bool isEmpty() => this.top == null ? true : false;
 

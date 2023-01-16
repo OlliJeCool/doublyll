@@ -1,0 +1,15 @@
+C:\Users\ollid\Desktop\doublyll\DoublyLL\bin\Debug\net6.0\DoublyLL.exe
+C:\Users\ollid\Desktop\doublyll\DoublyLL\bin\Debug\net6.0\DoublyLL.deps.json
+C:\Users\ollid\Desktop\doublyll\DoublyLL\bin\Debug\net6.0\DoublyLL.runtimeconfig.json
+C:\Users\ollid\Desktop\doublyll\DoublyLL\bin\Debug\net6.0\DoublyLL.dll
+C:\Users\ollid\Desktop\doublyll\DoublyLL\bin\Debug\net6.0\DoublyLL.pdb
+C:\Users\ollid\Desktop\doublyll\DoublyLL\obj\Debug\net6.0\DoublyLL.csproj.AssemblyReference.cache
+C:\Users\ollid\Desktop\doublyll\DoublyLL\obj\Debug\net6.0\DoublyLL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ollid\Desktop\doublyll\DoublyLL\obj\Debug\net6.0\DoublyLL.AssemblyInfoInputs.cache
+C:\Users\ollid\Desktop\doublyll\DoublyLL\obj\Debug\net6.0\DoublyLL.AssemblyInfo.cs
+C:\Users\ollid\Desktop\doublyll\DoublyLL\obj\Debug\net6.0\DoublyLL.csproj.CoreCompileInputs.cache
+C:\Users\ollid\Desktop\doublyll\DoublyLL\obj\Debug\net6.0\DoublyLL.dll
+C:\Users\ollid\Desktop\doublyll\DoublyLL\obj\Debug\net6.0\refint\DoublyLL.dll
+C:\Users\ollid\Desktop\doublyll\DoublyLL\obj\Debug\net6.0\DoublyLL.pdb
+C:\Users\ollid\Desktop\doublyll\DoublyLL\obj\Debug\net6.0\DoublyLL.genruntimeconfig.cache
+C:\Users\ollid\Desktop\doublyll\DoublyLL\obj\Debug\net6.0\ref\DoublyLL.dll
